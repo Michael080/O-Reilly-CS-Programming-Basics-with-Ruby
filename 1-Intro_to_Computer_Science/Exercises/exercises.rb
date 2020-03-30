@@ -13,3 +13,11 @@ end
 p square(2)
 p square(5)
 p square(4)
+
+def exp(num, exp)
+  num**exp
+end
+
+p exp(2,2)
+p exp(3, 3)
+p exp(5, 3)
