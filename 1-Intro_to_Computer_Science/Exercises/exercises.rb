@@ -37,14 +37,26 @@ p exp(5, 3)
 # depend on n?
 puts "--------------------------------------
 2.)"
+# !Write this as a method that sums range provided via
+# user input
 
-n = 100
-i = 2
-sum = 1
+def summerizer
+  puts "- Let's sum a range of numbers -"
+  puts "Please enter first number of set"
+  num_1 = gets.chomp.to_i
 
-while i <= n
-  sum = sum + i
-  i += 1
+  puts "Please enter second number of set"
+  num_2 = gets.chomp.to_i
+
+  i = num_1 + 1
+  p "first #{num_1}, second #{num_2}"
+
+  while i <= num_2
+    num_1 = num_1 + i
+    i += 1
+  end
+
+  p "The sum of numbers 1 - 100 #{num_1}"
 end
 
-p "The sum of numbers 1 - 100 #{sum}"
+summerizer
