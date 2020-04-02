@@ -42,10 +42,10 @@ puts "--------------------------------------
 
 def summerizer
   puts "- Let's sum a range of numbers -"
-  puts "Please enter first number of set"
+  puts ">> Please enter first number of set"
   num_1 = gets.chomp.to_i
 
-  puts "Please enter second number of set"
+  puts ">> Please enter second number of set"
   num_2 = gets.chomp.to_i
 
   i = num_1 + 1
