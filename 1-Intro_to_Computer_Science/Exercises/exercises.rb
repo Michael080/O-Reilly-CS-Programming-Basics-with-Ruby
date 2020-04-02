@@ -37,8 +37,6 @@ p exp(5, 3)
 # depend on n?
 puts "--------------------------------------
 2.)"
-# !Write this as a method that sums range provided via
-# user input
 
 def summerizer
   puts "- Let's sum a range of numbers -"
