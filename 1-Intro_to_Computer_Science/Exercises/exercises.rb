@@ -71,8 +71,16 @@ num_set_2 = Array.new
 (1..100).each do |num|
   num <= 50 ? num_set_1.push(num) : num_set_2.push(num)
 end
-
 # Perform 'vertical' addition
+# p num_set_1[0] + num_set_2[49]
+i_2 = 49
+result = 0
+num_set_1.each do |num|
+  num + num_set_2[i_2] == 101 ? result+=101 : puts("Something went wrong...")
+  i_2 -= 1
+end
+
+p "The sum of the first 100 whole numbers: #{result}"
 # Check result of addition produces expected sum of 101
 # Count number of 101 results
 # Add sums to new variable for result
