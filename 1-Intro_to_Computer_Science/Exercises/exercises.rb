@@ -33,10 +33,9 @@ p exp(5, 3)
 #     a. Craft an algorithm that will sum the first n numbers (assuming n ≥ 1). How
 # many steps does your algorithm take to complete when n = 100? How many
 # steps does it take when n = 1,000?
-#     b. Can you create an algorithm like Gauss’s where the number of steps does not
-# depend on n?
+#
 puts "--------------------------------------
-2.)"
+2a.)"
 
 def summerizer
   puts "- Let's sum a range of numbers -"
@@ -58,3 +57,22 @@ def summerizer
 end
 
 summerizer
+
+
+#     b. Can you create an algorithm like Gauss’s where the number of steps does not
+# depend on n?
+puts "--------------------------------------
+2a.)"
+# Guassian thingamajig:
+
+# Create array of number set
+num_set_1 = Array.new
+num_set_2 = Array.new
+(1..100).each do |num|
+  num <= 50 ? num_set_1.push(num) : num_set_2.push(num)
+end
+
+# Perform 'vertical' addition
+# Check result of addition produces expected sum of 101
+# Count number of 101 results
+# Add sums to new variable for result
